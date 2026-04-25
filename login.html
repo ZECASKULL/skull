@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de login seguro para acessar a Jiujitsu Store">
+    <meta name="keywords" content="login, autenticação, segurança, acesso, jiujitsu">
+    <meta name="author" content="SKULL BJJ Team">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title>Login - SKULL BJJ Store</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+</head>
+<body class="login-page">
+    <main class="login-container" role="main">
+        <div class="login-card">
+            <header class="login-header">
+                <div class="logo">💀</div>
+                <h1>SKULL BJJ Store</h1>
+                <p class="login-subtitle">Faça login para acessar a loja</p>
+            </header>
+            
+            <section class="login-form-section" aria-labelledby="login-heading">
+                <h2 id="login-heading" class="visually-hidden">Formulário de Login</h2>
+                
+                <form id="loginForm" class="login-form" novalidate>
+                    <div class="form-group">
+                        <label for="username" class="form-label">
+                            Usuário
+                        </label>
+                        <div class="input-wrapper">
+                            <input 
+                                type="text" 
+                                id="username" 
+                                name="username" 
+                                class="form-input"
+                                placeholder="Digite seu usuário"
+                                required
+                                aria-describedby="username-error"
+                                autocomplete="username"
+                            >
+                            <span class="input-icon">👤</span>
+                        </div>
+                        <div id="username-error" class="error-message" role="alert" aria-live="polite"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password" class="form-label">
+                            Senha
+                        </label>
+                        <div class="input-wrapper">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                class="form-input"
+                                placeholder="Digite sua senha"
+                                required
+                                aria-describedby="password-error"
+                                autocomplete="current-password"
+                            >
+                            <button 
+                                type="button" 
+                                id="togglePassword" 
+                                class="toggle-password"
+                                aria-label="Mostrar senha"
+                                title="Mostrar senha"
+                            >
+                                👁️
+                            </button>
+                        </div>
+                        <div id="password-error" class="error-message" role="alert" aria-live="polite"></div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="remember" name="remember" class="checkbox">
+                            <span class="checkbox-text">Lembrar de mim</span>
+                        </label>
+                        
+                        <a href="#" class="forgot-password" onclick="showCredentials(); return false;">
+                            Esqueci a senha
+                        </a>
+                    </div>
+                    
+                    <button type="submit" class="login-button" id="loginButton">
+                        <span class="button-text">Entrar</span>
+                        <span class="button-loading" style="display: none;">⏳</span>
+                    </button>
+                    
+                    <div id="login-error" class="login-error" role="alert" aria-live="polite"></div>
+                </form>
+            </section>
+            
+            <footer class="auth-footer">
+                <p>Não tem uma conta? <a href="register.html" class="auth-link">Criar conta</a></p>
+                <p>&copy; 2024 SKULL BJJ. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+        
+        <div class="credentials-info" id="credentialsInfo" style="display: none;">
+            <h3>Credenciais de Demonstração</h3>
+            <div class="credentials-list">
+                <div class="credential-item">
+                    <strong>Administrador:</strong><br>
+                    Usuário: <code>admin</code><br>
+                    Senha: <code>123456</code>
+                </div>
+                <div class="credential-item">
+                    <strong>Usuário Comum:</strong><br>
+                    Usuário: <code>usuario</code><br>
+                    Senha: <code>senha</code>
+                </div>
+            </div>
+            <button onclick="hideCredentials()" class="close-credentials">Fechar</button>
+        </div>
+    </main>
+    
+    <!-- Scripts -->
+    <script src="auth-secure.js"></script>
+</body>
+</html>

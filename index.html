@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja especializada em kimonos de jiu-jitsu de alta qualidade. Modelos para todos os níveis, do iniciante ao competidor profissional.">
+    <meta name="keywords" content="jiu-jitsu, kimono, bjj, artes marciais, kimonos, kingz, competition, training">
+    <meta name="author" content="Jiujitsu Store">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jiujitsu Store - Kimonos de Alta Qualidade">
+    <meta property="og:description" content="Encontre o kimono perfeito para seu jiu-jitsu. Modelos profissionais com as melhores tecnologias.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Jiujitsu Store - Kimonos de Alta Qualidade">
+    <meta property="twitter:description" content="Encontre o kimono perfeito para seu jiu-jitsu. Modelos profissionais com as melhores tecnologias.">
+    
+    <title>Jiujitsu Store - Kimonos de Alta Qualidade</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥋</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="store-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <h1 class="store-logo">💀 SKULL BJJ</h1>
+                <p class="store-tagline">Seja Seu Melhor</p>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#academy" class="nav-link">Academia</a></li>
+                    <li><a href="#products" class="nav-link">Kimonos</a></li>
+                    <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <span id="welcomeMessage" class="welcome-message">Bem-vindo!</span>
+                <button id="logoutButton" class="logout-button" onclick="handleLogout()">
+                    Sair
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">SEJA SEU MELHOR</h2>
+            <p class="hero-subtitle">Descubra o poder do Jiu-Jitsu na SKULL BJJ</p>
+            <button class="cta-button" onclick="window.location.href='pg002.html'">
+                INSCREVA-SE HOJE
+            </button>
+        </div>
+    </section>
+
+    <!-- Academy Section -->
+    <section id="academy" class="academy-section">
+        <div class="academy-content">
+            <div class="academy-info">
+                <h2 class="academy-title">SOBRE A NOSSA ACADEMIA</h2>
+                <p class="academy-description">
+                    SKULL BJJ foi fundada em 2025 por CAIO CARDIAS e JOELSON DA SUCATA.
+                    Academia de Jiu-Jitsu com foco em qualidade, técnica e resultados. 
+                    Oferecemos aulas para todas as idades e níveis, com professores experientes 
+                    e ambiente acolhedor. Venha treinar conosco e descubra o poder do Jiu-Jitsu!
+                </p>
+                <button class="academy-button" onclick="scrollToSection('contact')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="academy-images">
+                <div class="academy-image">🥋</div>
+                <div class="academy-image">💪</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-content">
+            <h2 class="services-title">O QUE OFERECEMOS</h2>
+            <div class="services-cards">
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>AULAS EXPERIMENTAIS</h3>
+                    <p>Experimente nossa primeira aula gratuitamente</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>AULAS EM GRUPO</h3>
+                    <p>Treine com outros alunos e evolua junto</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏆</div>
+                    <h3>MESTRES QUALIFICADOS</h3>
+                    <p>Aprenda com os melhores professores da região</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="testimonials-content">
+            <h2 class="testimonials-title">ANTES E DEPOIS</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">👩‍🦰</div>
+                    <div class="testimonial-text">
+                        <p>O jiu jitsu mudou muito a minha vida, principalmente a minha confiança. Eu era muito descrente de mim mesma e não confiava em mim. Desde que entrei no jiu-jitsu, fui conquistando essa confiança que eu tanto precisava. Também melhorou muito a minha mentalidade, a minha disciplina e a minha qualidade de vida. O jiu-jitsu me ajudou a acreditar mais em mim e a acalmar a minha ansiedade.</p>
+                        <strong>Paula Curry, 20</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">👨‍🦱</div>
+                    <div class="testimonial-text">
+                        <p>Depoimentos são citações curtas de clientes.</p>
+                        <strong>Kelvyn Sarraff, 18</strong>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">👨</div>
+                    <div class="testimonial-text">
+                        <p>Depoimentos são citações curtas de clientes.</p>
+                        <strong>SANTOS, 17</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <main class="main-content" role="main">
+        <section id="products" class="products-section">
+            <div class="section-header">
+                <h2 class="section-title">Todos os Kimonos</h2>
+                <p class="section-subtitle">Modelos para todos os níveis e estilos</p>
+            </div>
+            
+            <!-- Filter Options -->
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="colorFilter">Cor:</label>
+                    <select id="colorFilter" class="filter-select">
+                        <option value="">Todas as cores</option>
+                        <option value="branco">Branco</option>
+                        <option value="azul">Azul</option>
+                        <option value="preto">Preto</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="priceFilter">Preço:</label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="">Todos os preços</option>
+                        <option value="low">Até R$ 1.200</option>
+                        <option value="medium">R$ 1.200 - R$ 1.400</option>
+                        <option value="high">Acima de R$ 1.400</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sortFilter">Ordenar:</label>
+                    <select id="sortFilter" class="filter-select">
+                        <option value="featured">Destaques</option>
+                        <option value="price-low">Menor preço</option>
+                        <option value="price-high">Maior preço</option>
+                        <option value="name">Nome</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div id="productsGrid" class="products-grid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2 class="contact-title">ENTRE EM CONTATO AINDA HOJE</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>ENDEREÇO</h3>
+                    <p>Passagem Guimarães, 32</p>
+                </div>
+                <div class="contact-item">
+                    <h3>E-MAIL</h3>
+                    <p>jao10carlitus@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>TELEFONE</h3>
+                    <p>(91) 98396-2663</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="store-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SKULL BJJ</h3>
+                <p>Academia de Jiu-Jitsu com foco em qualidade, técnica e resultados.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>📧 jao10carlitus@gmail.com</p>
+                <p>📱 (91) 98396-2663</p>
+                <p>📍 Passagem Guimarães, 32</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SKULL BJJ. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Modal de acesso negado -->
+    <div id="accessDeniedModal" class="access-denied-modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🔒 Acesso Restrito</h2>
+            </div>
+            <div class="modal-body">
+                <p>Você precisa fazer login para acessar esta aplicação.</p>
+                <p>Redirecionando para a página de login...</p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="redirectToLogin()" class="modal-button">
+                    Ir para Login
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="auth-secure.js"></script>
+    <script src="script-secure.js"></script>
+</body>
+</html>
